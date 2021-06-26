@@ -7,6 +7,7 @@ public class LogginLab {
     private Integer threshold = 0;
 
     public LogginLab() {
+
         this.threshold = 0;
     }
 
@@ -21,16 +22,24 @@ public class LogginLab {
     }
 
     public Integer getThreshold() {
+
         return threshold;
     }
 
     public void setThreshold(Integer threshold) {
+
         this.threshold = threshold;
     }
 
     public boolean thresholdExceeds(Integer limit) {
+
         return (this.threshold > limit);
     }
+    public boolean thresholdReached(int limit) {
+
+        return (limit > this.threshold);
+    }
+
 
     // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
     // Write a test for the method in the Test class.
